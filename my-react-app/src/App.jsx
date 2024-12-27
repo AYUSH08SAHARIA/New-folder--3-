@@ -1,33 +1,28 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { ThemeProvider } from "styled-components";
 import './App.css'
 
 function App() {
   const [count, setCount] = useState(0)
 
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+    <>  
+   
+      <h1>TypeQuest</h1>
+      <div id="header">
+            <div id="info"></div>
+            <div id="buttons">
+                <button id="newGameBtn">New game</button>
+            </div>
+        </div>
+        <div id="game" tabindex="0">
+            <div45 id="words"></div45>
+            <div id="cursor"></div>
+            <div id="focus-error">Click here to focus</div>
+        </div>
+      
     </>
   )
 }
